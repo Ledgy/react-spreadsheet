@@ -128,11 +128,16 @@ export const cut = (state: Types.StoreState<*>) => ({
   cut: true
 });
 
-export async function paste<Cell: Types.CellBase>(state: Types.StoreState<Cell>) {
+export async function paste<Cell: Types.CellBase>(
+  state: Types.StoreState<Cell>
+) {
   const text = await clipboard.readText();
   if (!text) return null;
-  const cells = text.split('\n')
-    .map((rowText, row) => rowText.split('\t').map((value, column) => [{row, column}, {value}]))
+  const cells = text
+    .split("\n")
+    .map((rowText, row) =>
+      rowText.split("\t").map((value, column) => [{ row, column }, { value }])
+    )
     .reduce((res, v) => [...res, ...v], []);
 
   const copied = PointMap.from<Cell>(cells);
