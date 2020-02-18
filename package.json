@@ -10,7 +10,7 @@
     "sheet",
     "table"
   ],
-  "main": "dist/SpreadsheetStateProvider.js",
+  "main": "src/SpreadsheetStateProvider.js",
   "scripts": {
     "test": "jest",
     "start": "yarn run cosmos",
