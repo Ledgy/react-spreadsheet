@@ -22,7 +22,7 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "fbjs": "^1.0.0",
-    "hot-formula-parser": "^3.0.0",
+    "hot-formula-parser": "^3.0.1",
     "unistore": "^3.4.1"
   },
   "devDependencies": {

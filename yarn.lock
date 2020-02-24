@@ -965,13 +965,13 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@handsontable/formulajs@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@handsontable/formulajs/-/formulajs-2.0.0.tgz#3e41fedbb51a195dd5b8c2694afe171ec08f3a02"
-  integrity sha1-PkH+27UaGV3VuMJpSv4XHsCPOgI=
+"@handsontable/formulajs@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@handsontable/formulajs/-/formulajs-2.0.2.tgz#5be4b9226cc47811f646ae46b1b985230cd82995"
+  integrity sha512-maIyMJtYjA5e/R9nyA22Qd7Yw73MBSxClJvle0a8XWAS/5l6shc/OFpQqrmwMy4IXUCmywJ9ER0gOGz/YA720w==
   dependencies:
-    bessel "^0.2.0"
-    jStat "^1.7.0"
+    bessel "^1.0.2"
+    jstat "^1.9.2"
 
 "@jest/console@^24.3.0":
   version "24.3.0"
@@ -1980,12 +1980,10 @@ bcrypt-pbkdf@^1.0.0:
   dependencies:
     tweetnacl "^0.14.3"
 
-bessel@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/bessel/-/bessel-0.2.0.tgz#13cb39cd29233219ec2da725e0ba0c66fb46b6f2"
-  integrity sha1-E8s5zSkjMhnsLacl4LoMZvtGtvI=
-  dependencies:
-    voc ""
+bessel@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/bessel/-/bessel-1.0.2.tgz#828812291e0b62e94959cdea43fac186e8a7202d"
+  integrity sha512-Al3nHGQGqDYqqinXhQzmwmcRToe/3WyBv4N8aZc5Pef8xw2neZlR9VPi84Sa23JtgWcucu18HxVZrnI0fn2etw==
 
 better-assert@~1.0.0:
   version "1.0.2"
@@ -4225,13 +4223,13 @@ hosted-git-info@^2.1.4:
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.7.1.tgz#97f236977bd6e125408930ff6de3eec6281ec047"
   integrity sha512-7T/BxH19zbcCTa8XkMlbK5lTo1WtgkFi3GvdWEyNuc4Vex7/9Dqbnpsf4JMydcfj9HCg4zUWFTL3Za6lapg5/w==
 
-hot-formula-parser@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/hot-formula-parser/-/hot-formula-parser-3.0.0.tgz#4019db8d565b84293ad7d1e46fcc1a4f894bb72e"
-  integrity sha512-CHLTrsrv29it5XPcHalNO8ClcJGHefwf599MePlG5dYzxxtbPqx/qt8CkrqvxQeNA5XtkAUcxU62OFv0z2L49A==
+hot-formula-parser@^3.0.1:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/hot-formula-parser/-/hot-formula-parser-3.0.2.tgz#d71f03a4ef43ba3074bde383a0e36202b5b64116"
+  integrity sha512-W/Dj/UbIyuViMIQOQD6tUEVySl7jd6ei+gfWslTiRqa4yRhkyHnIz8N4oLnqgDRhhVAQIcFF5NfNz49k4X8IxQ==
   dependencies:
-    "@handsontable/formulajs" "^2.0.0"
-    tiny-emitter "^2.0.1"
+    "@handsontable/formulajs" "^2.0.2"
+    tiny-emitter "^2.1.0"
 
 html-encoding-sniffer@^1.0.2:
   version "1.0.2"
@@ -4830,11 +4828,6 @@ istanbul-reports@^2.2.6:
   dependencies:
     handlebars "^4.1.2"
 
-jStat@^1.7.0:
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/jStat/-/jStat-1.7.1.tgz#e636dd87d72b305c060dfcc901de1732d15130c1"
-  integrity sha512-toueem/U5hyHM6pqe6OZOL/5P8MrY7Ss1K8Brg+TcfX+RAjDU/sbwy72fwzmLPQ5ykdBe1UEoWQHc7OSNWMUDQ==
-
 jest-changed-files@^24.9.0:
   version "24.9.0"
   resolved "https://registry.yarnpkg.com/jest-changed-files/-/jest-changed-files-24.9.0.tgz#08d8c15eb79a7fa3fc98269bc14b451ee82f8039"
@@ -5398,6 +5391,11 @@ jsprim@^1.2.2:
     extsprintf "1.3.0"
     json-schema "0.2.3"
     verror "1.10.0"
+
+jstat@^1.9.2:
+  version "1.9.2"
+  resolved "https://registry.yarnpkg.com/jstat/-/jstat-1.9.2.tgz#cd2d24df200fd3488861dc7868be01ff65a238cc"
+  integrity sha512-nc3uAadgrWWvJz6RyXUFN0lvTWEXYxMVIrm6ZVoOh4YPLvukLKYpqMofKIE2ReWkL7gFw6hEo6VWZjotYW2Bsw==
 
 jsx-ast-utils@^2.0.1:
   version "2.0.1"
@@ -8160,7 +8158,7 @@ timers-browserify@^2.0.4:
   dependencies:
     setimmediate "^1.0.4"
 
-tiny-emitter@^2.0.1:
+tiny-emitter@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/tiny-emitter/-/tiny-emitter-2.1.0.tgz#1d1a56edfc51c43e863cbb5382a72330e3555423"
   integrity sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==
@@ -8528,11 +8526,6 @@ vm-browserify@0.0.4:
   integrity sha1-XX6kW7755Kb/ZflUOOCofDV9WnM=
   dependencies:
     indexof "0.0.1"
-
-voc@:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/voc/-/voc-1.1.0.tgz#d1a08aeff66646bf17cdba2e47c935a7a9b0218b"
-  integrity sha512-fthgd8OJLqq8vPcLjElTk6Rcl2e3v5ekcXauImaqEnQqd5yUWKg1+ZOBgS2KTWuVKcuvZMQq4TDptiT1uYddUA==
 
 w3c-hr-time@^1.0.1:
   version "1.0.1"
