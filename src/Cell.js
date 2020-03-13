@@ -81,6 +81,12 @@ export class Cell<Data: Types.CellBase, Value> extends PureComponent<
     }
   };
 
+  isTableCell() {
+    const { activeElement } = document;
+    const tableElements = ['TD', 'DIV', 'BODY'];
+    return activeElement && tableElements.includes(activeElement.tagName);
+  }
+
   componentDidUpdate() {
     const {
       row,
@@ -93,7 +99,7 @@ export class Cell<Data: Types.CellBase, Value> extends PureComponent<
     if (selected && this.root) {
       setCellDimensions({ row, column }, getOffsetRect(this.root));
     }
-    if (this.root && active && mode === "view") {
+    if (this.root && this.isTableCell() && active && mode === "view") {
       this.root.focus();
     }
   }
